@@ -1,4 +1,5 @@
 import tkinter as tk
+import json
 from ollama_test import ChatBot  # Assuming your ChatBot class is in a file named 'chatbot.py'
 
 class ChatWindow:
@@ -39,3 +40,44 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+def load_questions_and_answers(file_path):
+    """ Load training data from a JSON file and separate it into questions and answers.
+
+    Args:
+        file_path (str): The path to the JSON file containing the training data.
+
+    Returns:
+        tuple: Two lists, the first containing questions and the second containing answers.
+    """
+    try:
+        with open(file_path, 'r', encoding='utf-8') as file:
+            data = json.load(file)
+        if not isinstance(data, list):
+            raise ValueError("Data should be a list of dictionaries.")
+        questions = [item['question'] for item in data if isinstance(item, dict)]
+        answers = [item['answer'] for item in data if isinstance(item, dict)]
+    except FileNotFoundError:
+        print("File not found. Please check the path and try again.")
+        return [], []
+    except json.JSONDecodeError:
+        print("Error decoding JSON. Please check the file format.")
+        return [], []
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return [], []
+    
+    return questions, answers
+
+# Example usage
+file_path = 'data.json'
+questions, answers = load_questions_and_answers(file_path)
+
+# # Output the lists to verify
+# print("Questions loaded:")
+# for question in questions:
+#     print(question)
+
+# print("\nAnswers loaded:")
+# for answer in answers:
+#     print(answer)

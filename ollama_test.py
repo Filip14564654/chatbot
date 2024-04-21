@@ -1,4 +1,5 @@
 import dspy
+import json
 
 class ChatBot:
     def __init__(self, model_name):
@@ -8,3 +9,4 @@ class ChatBot:
 
     def ask_question(self, question):
         return self.qa_module(question=question).answer
+    
