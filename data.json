@@ -1,5 +1,4 @@
-{
-    "questions": [
+[
         {
             "question": "Jak\u00fd je \u00fa\u010del Studijn\u00edho a zku\u0161ebn\u00edho \u0159\u00e1du Ostravsk\u00e9 univerzity?",
             "answer": "Studijn\u00ed a zku\u0161ebn\u00ed \u0159\u00e1d Ostravsk\u00e9 univerzity stanov\u00ed pravidla studia ve studijn\u00edch programech akreditovan\u00fdch na OU a uskute\u010d\u0148ovan\u00fdch jej\u00edmi fakultami, jako\u017e i pravidla kon\u00e1n\u00ed st\u00e1tn\u00edch rigor\u00f3zn\u00edch zkou\u0161ek."
@@ -85,4 +84,3 @@
             "answer": "B\u011bhem letn\u00edch pr\u00e1zdnin by m\u011blo b\u00fdt zachov\u00e1no minimaln\u011b \u010dty\u0159i t\u00fddny voln\u00e9ho obdob\u00ed pro studenty."
         }
     ]
-}
