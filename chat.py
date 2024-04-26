@@ -1,6 +1,6 @@
 import tkinter as tk
+from ollama_test import ChatBot
 import json
-from ollama_test import ChatBot  # Assuming your ChatBot class is in a file named 'chatbot.py'
 
 class ChatWindow:
     def __init__(self, master):
@@ -29,13 +29,50 @@ class ChatWindow:
 
     def display_message(self, message):
         self.chat_log.configure(state='normal')
-        self.chat_log.insert(tk.END, message + '\n')
+        if message.startswith("User:"):
+            self.chat_log.insert(tk.END, message + '\n')
+        elif message.startswith("Bot:"):
+            self.chat_log.insert(tk.END, message + '\n')
+        else:
+            self.chat_log.insert(tk.END, "User: " + message + '\n')
         self.chat_log.configure(state='disabled')
         self.chat_log.see(tk.END)
 
+
+    def load_questions_and_answers(self, file_path):
+        """ Load training data from a JSON file and separate it into questions and answers.
+
+        Args:
+            file_path (str): The path to the JSON file containing the training data.
+
+        Returns:
+            tuple: Two lists, the first containing questions and the second containing answers.
+        """
+        try:
+            with open(file_path, 'r', encoding='utf-8') as file:
+                data = json.load(file)
+            if not isinstance(data, list):
+                raise ValueError("Data should be a list of dictionaries.")
+            questions = [item['question'] for item in data if isinstance(item, dict)]
+            answers = [item['answer'] for item in data if isinstance(item, dict)]
+        except FileNotFoundError:
+            print("File not found. Please check the path and try again.")
+            return [], []
+        except json.JSONDecodeError:
+            print("Error decoding JSON. Please check the file format.")
+            return [], []
+        except Exception as e:
+            print(f"An error occurred: {e}")
+            return [], []
+        
+        return questions, answers
+
 def main():
+    # Example usage
+    file_path = 'data.json'
     root = tk.Tk()
     chat_window = ChatWindow(root)
+    questions, answers = chat_window.load_questions_and_answers(file_path)
     root.mainloop()
 
 if __name__ == "__main__":
