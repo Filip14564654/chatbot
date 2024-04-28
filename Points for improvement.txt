@@ -21,3 +21,5 @@
     Ověření přesností na větších validačních sadách: Rozšíření validační sady a pravidelné testování modelu na ní pomůže zjistit, jak dobře model funguje, a identifikovat oblasti pro zlepšení.
 
     Post-trénovací analýza chyb: Po trénování modelu proveďte analýzu chyb, abyste identifikovali typy otázek, na které model odpovídá nesprávně, a zaměřte se na zlepšení těchto oblastí.
+
+    Vylepšit kód, aby se po naučení model někde ukládal.

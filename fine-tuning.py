@@ -43,11 +43,11 @@ class GenerateAnswer(dspy.Signature):
 #self.generate_answear allow you to generate answear with defined structure (signature)
 #method forward is for generation of answear where it take question with context, then make prediction and give us an answear
 class RAG(dspy.Module):
-    def __init__(self, num_passages=5):
+    def __init__(self, num_passages=3):
         super().__init__()
 
         self.retrieve = dspy.Retrieve(k=num_passages)
-        self.generate_answer = dspy.ChainOfThought(GenerateAnswer)
+        self.generate_answer = dspy.ChainOfThought(GenerateAnswer, n=5)
     
     def forward(self, question):
         context = self.retrieve(question).passages
