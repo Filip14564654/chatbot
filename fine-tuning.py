@@ -1,5 +1,4 @@
 import dspy
-#from dspy.datasets import HotPotQA
 from dspy.teleprompt import BootstrapFewShot
 
 import pandas as pd
@@ -13,28 +12,25 @@ colbertv2_wiki17_abstracts = dspy.ColBERTv2(url='http://20.102.90.50:2017/wiki17
 
 dspy.settings.configure(lm=ollamallama3, rm=colbertv2_wiki17_abstracts)
 
-
+#split csv data, self._train split first x rows into train data and so do self._dev
 class CSVDataset(Dataset):
     def __init__(self, file_path, *args, **kwargs) -> None:
         super().__init__(*args, **kwargs)
         
         df = pd.read_csv(file_path)
-        self._train = df.iloc[0:700].to_dict(orient='records')
+        self._train = df.iloc[0:15].to_dict(orient='records')
 
-        self._dev = df.iloc[700:].to_dict(orient='records')
+        self._dev = df.iloc[15:].to_dict(orient='records')
 
 dataset = CSVDataset("train_data.csv")
 #print(dataset.train[:3])
 
 
-# Load the dataset.
-#dataset = HotPotQA(train_seed=1, train_size=20, eval_seed=2023, dev_size=50, test_size=0)
-
-# Tell DSPy that the 'question' field is the input. Any other fields are labels and/or metadata.
+# Load the of training and validation data
 trainset = [x.with_inputs('question') for x in dataset.train]
 devset = [x.with_inputs('question') for x in dataset.dev]
 
-
+#template for generating answears
 class GenerateAnswer(dspy.Signature):
     """Answer questions with short factoid answers."""
 
@@ -42,6 +38,10 @@ class GenerateAnswer(dspy.Signature):
     question = dspy.InputField()
     answer = dspy.OutputField(desc="often between 1 and 5 words")
 
+#define how task will be proceed, num_passages is number of context for question
+#self.retrieve load of relevant contexts
+#self.generate_answear allow you to generate answear with defined structure (signature)
+#method forward is for generation of answear where it take question with context, then make prediction and give us an answear
 class RAG(dspy.Module):
     def __init__(self, num_passages=3):
         super().__init__()
