@@ -36,7 +36,7 @@ class GenerateAnswer(dspy.Signature):
 
     context = dspy.InputField(desc="may contain relevant facts")
     question = dspy.InputField()
-    answer = dspy.OutputField(desc="often between 1 and 10 words")
+    answer = dspy.OutputField(desc="often between 1 and 30 words")
 
 #define how task will be proceed, num_passages is number of context for question
 #self.retrieve load of relevant contexts
@@ -47,7 +47,7 @@ class RAG(dspy.Module):
         super().__init__()
 
         self.retrieve = dspy.Retrieve(k=num_passages)
-        self.generate_answer = dspy.ChainOfThought(GenerateAnswer, n=5)
+        self.generate_answer = dspy.ChainOfThought(GenerateAnswer)
     
     def forward(self, question):
         context = self.retrieve(question).passages
