@@ -18,9 +18,9 @@ class CSVDataset(Dataset):
         super().__init__(*args, **kwargs)
         
         df = pd.read_csv(file_path)
-        self._train = df.iloc[0:15].to_dict(orient='records')
+        self._train = df.iloc[0:40].to_dict(orient='records')
 
-        self._dev = df.iloc[15:].to_dict(orient='records')
+        self._dev = df.iloc[40:].to_dict(orient='records')
 
 dataset = CSVDataset("train_data.csv")
 #print(dataset.train[:3])
@@ -36,14 +36,14 @@ class GenerateAnswer(dspy.Signature):
 
     context = dspy.InputField(desc="may contain relevant facts")
     question = dspy.InputField()
-    answer = dspy.OutputField(desc="often between 1 and 5 words")
+    answer = dspy.OutputField(desc="often between 1 and 10 words")
 
 #define how task will be proceed, num_passages is number of context for question
 #self.retrieve load of relevant contexts
 #self.generate_answear allow you to generate answear with defined structure (signature)
 #method forward is for generation of answear where it take question with context, then make prediction and give us an answear
 class RAG(dspy.Module):
-    def __init__(self, num_passages=3):
+    def __init__(self, num_passages=5):
         super().__init__()
 
         self.retrieve = dspy.Retrieve(k=num_passages)
@@ -68,7 +68,7 @@ teleprompter = BootstrapFewShot(metric=validate_context_and_answer)
 compiled_rag = teleprompter.compile(RAG(), trainset=trainset)
 
 # Ask any question you like to this simple RAG program.
-my_question = "Jak je definován studijní předmět na OU?"
+my_question = "Jaký je účel přednášek na Ostravské univerzitě?"
 
 # Get the prediction. This contains `pred.context` and `pred.answer`.
 pred = compiled_rag(my_question)
