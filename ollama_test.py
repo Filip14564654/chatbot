@@ -7,4 +7,5 @@ class ChatBot:
         self.qa_module = dspy.ChainOfThought('question -> answer')
 
     def ask_question(self, question):
-        return self.qa_module(question=question).answer
+        return self.model(question)[0]
+        # return self.qa_module(question=question).answer
