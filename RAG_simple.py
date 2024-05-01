@@ -68,7 +68,7 @@ teleprompter = BootstrapFewShot(metric=validate_context_and_answer)
 compiled_rag = teleprompter.compile(RAG(), trainset=trainset)
 
 # Ask any question you like to this simple RAG program.
-my_question = "Jaký je účel přednášek na Ostravské univerzitě?"
+my_question = "Jaký je účel přednášek na Ostravské univerzitě a kdo zodpovídá za odbornou úroveň daného předmětu?"
 
 # Get the prediction. This contains `pred.context` and `pred.answer`.
 pred = compiled_rag(my_question)
