@@ -1,7 +1,6 @@
 import dspy
 from dspy.teleprompt import BootstrapFewShot
 from dsp.utils import deduplicate
-from dspy.evaluate.evaluate import Evaluate
 
 import pandas as pd
 from dspy.datasets.dataset import Dataset
