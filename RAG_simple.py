@@ -7,7 +7,8 @@ from dspy.datasets.dataset import Dataset
 
 
 
-ollamallama3 = dspy.OllamaLocal(model='llama3')
+ollamallama3 = dspy.OllamaLocal(model="llama3:8b-instruct-q5_1", max_tokens=4000, timeout_s=480)
+#ollamallama3 = dspy.OllamaLocal(model='mistral')
 colbertv2_wiki17_abstracts = dspy.ColBERTv2(url='http://20.102.90.50:2017/wiki17_abstracts')
 
 dspy.settings.configure(lm=ollamallama3, rm=colbertv2_wiki17_abstracts)
