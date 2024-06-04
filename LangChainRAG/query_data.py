@@ -1,8 +1,8 @@
 import argparse
 from dataclasses import dataclass
 from langchain_community.vectorstores import Chroma
-from langchain_community.embeddings import OpenAIEmbeddings
-from langchain.chat_models import ChatOpenAI
+from langchain_openai import OpenAIEmbeddings
+from langchain_openai import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate
 
 CHROMA_PATH = "chroma"
@@ -16,7 +16,6 @@ Answer the question based only on the following context:
 
 Answer the question based on the above context: {question}
 """
-
 
 def main():
     # Create CLI.
@@ -40,13 +39,12 @@ def main():
     prompt = prompt_template.format(context=context_text, question=query_text)
     print(prompt)
 
-    model = ChatOpenAI()
-    response_text = model.predict(prompt)
+    model = ChatOpenAI( )
+    response_text = model.invoke(prompt)
 
     sources = [doc.metadata.get("source", None) for doc, _score in results]
     formatted_response = f"Response: {response_text}\nSources: {sources}"
     print(formatted_response)
-
 
 if __name__ == "__main__":
     main()
