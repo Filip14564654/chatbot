@@ -90,7 +90,7 @@ teleprompter = BootstrapFewShot(metric=validate_context_and_answer_and_hops)
 compiled_baleen = teleprompter.compile(SimplifiedBaleen(), trainset=trainset)
 
 # Ask any question you like to this simple RAG program.
-my_question = "Jaký je účel přednášek na Ostravské univerzitě a kdo zodpovídá za odbornou úroveň daného předmětu?"
+my_question = "Jaký je účel přednášek na Ostravské univerzitě a jaký údaj je přidělen studujícímu po registraci do elektronického informačního systému na OU?"
 
 # Get the prediction. This contains `pred.context` and `pred.answer`.
 uncompiled_baleen = SimplifiedBaleen()  # uncompiled (i.e., zero-shot) program
