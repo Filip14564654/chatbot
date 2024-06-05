@@ -1,0 +1,152 @@
+Enter your initial question: Kolik kreditů potřebuji na úspěšné dokončení bakalářského studia?
+Prompt:
+Human:
+The following is a conversation with an AI assistant. The assistant is helpful, creative, clever, and very friendly.
+
+Context information:
+Typ studia Standardní doba studia Celkový počet kreditů Bakalářský 3 180 Bakalářský 4 240 Navazující magisterský 2 120 Magisterský 5 300 Magisterský 6 360
+
+---
+
+Jednotlivým typům studia odpovídají kreditní počty podle této tabulky:
+
+Typ studia Standardní doba studia Celkový počet kreditů Bakalářský 3 180 Bakalářský 4 240 Navazující magisterský 2 120 Magisterský 5 300 Magisterský 6 360 Doktorský 3 180 Doktorský 4 240
+
+---
+
+Celkové studijní zátěži za akademický rok  obvykle  odpovídá 60 kreditů, za semestr 30 kreditů.
+
+Státní  závěrečné  zkoušce,  jejím  částem  nebo  obhajobě  bakalářské,  diplomové, disertační, rigorózní či závěrečné práce se kredity nepřiřazují.
+
+---
+
+
+User: Kolik kreditů potřebuji na úspěšné dokončení bakalářského studia?
+Assistant:
+
+Response: content='Potřebujete celkem 180 kreditů na úspěšné dokončení bakalářského studia.' response_metadata={'token_usage': {'completion_tokens': 33, 'prompt_tokens': 379, 'total_tokens': 412}, 'model_name': 'gpt-3.5-turbo', 'system_fingerprint': None, 'finish_reason': 'stop', 'logprobs': None} id='run-3827c644-47ea-4d6d-bd5b-b6e631b21bde-0' usage_metadata={'input_tokens': 379, 'output_tokens': 33, 'total_tokens': 412}
+Sources: ['data\\ou-stud_rad.md', 'data\\ou-stud_rad.md', 'data\\ou-stud_rad.md']
+Enter your next question (or 'exit' to quit): Kdo je Garantem státní rigorózní zkoušky
+Prompt:
+Human:
+The following is a conversation with an AI assistant. The assistant is helpful, creative, clever, and very friendly.
+
+Context information:
+Předsedou zkušební komise je profesor nebo docent, který odborně působí v rámci studijního programu, z něhož se bude státní rigorózní zkouška konat, zpravidla se jedná o garanta státní rigorózní zkoušky.
+
+---
+
+Na návrh garanta státní rigorózní zkoušky jmenuje děkan alespoň dva oponenty.
+
+Konzultant vypracuje k rigorózní práci stanovisko.
+
+Oponenti  vypracují  posudek,  ve  kterém  výslovně  uvedou,  zda  je  rigorózní  práce doporučena, nebo nedoporučena k obhajobě.
+
+---
+
+Děkan jmenuje a odvolává garanta:
+
+studijního programu,
+
+programu celoživotního vzdělávání.
+
+Garantem státní rigorózní zkoušky je garant navazujícího magisterského studijního programu, v jehož rámci bylo uděleno právo konat rigorózní řízení.
+
+---
+
+User: Kolik kreditů potřebuji na úspěšné dokončení bakalářského studia?
+Assistant: content='Potřebujete celkem 180 kreditů na úspěšné dokončení bakalářského studia.' response_metadata={'token_usage': {'completion_tokens': 33, 'prompt_tokens': 379, 'total_tokens': 412}, 'model_name': 'gpt-3.5-turbo', 'system_fingerprint': None, 'finish_reason': 'stop', 'logprobs': None} id='run-3827c644-47ea-4d6d-bd5b-b6e631b21bde-0' usage_metadata={'input_tokens': 379, 'output_tokens': 33, 'total_tokens': 412}
+
+User: Kdo je Garantem státní rigorózní zkoušky
+Assistant:
+
+Response: content='Garantem státní rigorózní zkoušky je garant navazujícího magisterského studijního programu, v jehož rámci bylo uděleno právo konat rigorózní řízení.' response_metadata={'token_usage': {'completion_tokens': 63, 'prompt_tokens': 558, 'total_tokens': 621}, 'model_name': 'gpt-3.5-turbo', 'system_fingerprint': None, 'finish_reason': 'stop', 'logprobs': None} id='run-43ac281f-5be3-4090-846a-bd8935258f41-0' usage_metadata={'input_tokens': 558, 'output_tokens': 63, 'total_tokens': 621}
+Sources: ['data\\ou-stud_rad.md', 'data\\ou-stud_rad.md', 'data\\ou-stud_rad.md']
+Enter your next question (or 'exit' to quit): Jaké jsou podoby studijních programů na OU?
+Prompt:
+Human:
+The following is a conversation with an AI assistant. The assistant is helpful, creative, clever, and very friendly.
+
+Context information:
+Seznam studijních programů podle odstavce 2 je aktuálně zveřejňován ve veřejné části internetových stránek OU.
+
+39
+
+Vnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU
+
+Článek 56
+
+Žádost o vykonání státní rigorózní zkoušky
+
+---
+
+Každý studijní program na OU náleží do jedné nebo více oblastí vzdělávání (Příloha č. 3 k zákonu).
+
+---
+
+6
+Vnitřní předpisy Ostravské univerzity
+
+Studijní a zkušební řád OU
+
+Článek 11  Studijní program
+
+Vysokoškolské  vzdělání  se  na  OU  získává  studiem  v  akreditovaných  studijních programech podle studijního plánu stanovenými formami studia.
+
+---
+
+User: Kolik kreditů potřebuji na úspěšné dokončení bakalářského studia?
+Assistant: content='Potřebujete celkem 180 kreditů na úspěšné dokončení bakalářského studia.' response_metadata={'token_usage': {'completion_tokens': 33, 'prompt_tokens': 379, 'total_tokens': 412}, 'model_name': 'gpt-3.5-turbo', 'system_fingerprint': None, 'finish_reason': 'stop', 'logprobs': None} id='run-3827c644-47ea-4d6d-bd5b-b6e631b21bde-0' usage_metadata={'input_tokens': 379, 'output_tokens': 33, 'total_tokens': 412}
+User: Kdo je Garantem státní rigorózní zkoušky
+Assistant: content='Garantem státní rigorózní zkoušky je garant navazujícího magisterského studijního programu, v jehož rámci bylo uděleno právo konat rigorózní řízení.' response_metadata={'token_usage': {'completion_tokens': 63, 'prompt_tokens': 558, 'total_tokens': 621}, 'model_name': 'gpt-3.5-turbo', 'system_fingerprint': None, 'finish_reason': 'stop', 'logprobs': None} id='run-43ac281f-5be3-4090-846a-bd8935258f41-0' usage_metadata={'input_tokens': 558, 'output_tokens': 63, 'total_tokens': 621}
+
+User: Jaké jsou podoby studijních programů na OU?
+Assistant:
+
+Response: content="content='Každý studijní program na OU náleží do jedné nebo více oblastí vzdělávání (Příloha č. 3 k zákonu). Vysokoškolské vzdělání se na OU získává studiem v akreditovaných studijních programech podle studijního plánu stanovenými formami studia.' \nresponse_metadata={'token_usage': {'completion_tokens': 63, 'prompt_tokens': 558, 'total_tokens': 621}, 'model_name': 'gpt-3.5-turbo', 'system_fingerprint': None, 'finish_reason': 'stop', 'logprobs': None} \nid='run-43ac281f-5be3-4090-846a-bd8935258f41-0' \nusage_metadata={'input_tokens': 558, 'output_tokens': 63, 'total_tokens': 621}" response_metadata={'token_usage': {'completion_tokens': 222, 'prompt_tokens': 719, 'total_tokens': 941}, 'model_name': 'gpt-3.5-turbo', 'system_fingerprint': None, 'finish_reason': 'stop', 'logprobs': None} id='run-b8f1bfc9-22c7-4554-9d32-27d0560721d2-0' usage_metadata={'input_tokens': 719, 'output_tokens': 222, 'total_tokens': 941}
+Sources: ['data\\ou-stud_rad.md', 'data\\ou-stud_rad.md', 'data\\ou-stud_rad.md']
+Enter your next question (or 'exit' to quit): Jaké existují typy studia na Ostravské univerzitě?
+Prompt:
+Human:
+The following is a conversation with an AI assistant. The assistant is helpful, creative, clever, and very friendly.
+
+Context information:
+Typy studia
+
+Programy CŽV se člení na tyto typy:
+   1) doplňující pedagogické programy,
+   1) rozšiřující programy a specializační programy,
+   1) programy CŽV v rámci akreditovaných studijních programů,
+   1) programy Univerzity třetího věku,
+   1) moduly,
+   1) ostatní programy a kurzy.
+
+---
+
+Na OU se uskutečňují tyto typy studijních programů:
+1) bakalářský studijní program;
+1) magisterský studijní program:
+
+magisterský  studijní  program  nenavazující  na  bakalářský  studijní program,
+
+---
+
+Vnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU
+
+V přednáškách se  studující seznamují s poznatky a metodami příslušného vědního nebo uměleckého oboru, uvádějí se do samostatného studia a připravují se k aplikacím přednášené látky.
+
+---
+
+User: Kolik kreditů potřebuji na úspěšné dokončení bakalářského studia?
+Assistant: content='Potřebujete celkem 180 kreditů na úspěšné dokončení bakalářského studia.' response_metadata={'token_usage': {'completion_tokens': 33, 'prompt_tokens': 379, 'total_tokens': 412}, 'model_name': 'gpt-3.5-turbo', 'system_fingerprint': None, 'finish_reason': 'stop', 'logprobs': None} id='run-3827c644-47ea-4d6d-bd5b-b6e631b21bde-0' usage_metadata={'input_tokens': 379, 'output_tokens': 33, 'total_tokens': 412}
+User: Kdo je Garantem státní rigorózní zkoušky
+Assistant: content='Garantem státní rigorózní zkoušky je garant navazujícího magisterského studijního programu, v jehož rámci bylo uděleno právo konat rigorózní řízení.' response_metadata={'token_usage': {'completion_tokens': 63, 'prompt_tokens': 558, 'total_tokens': 621}, 'model_name': 'gpt-3.5-turbo', 'system_fingerprint': None, 'finish_reason': 'stop', 'logprobs': None} id='run-43ac281f-5be3-4090-846a-bd8935258f41-0' usage_metadata={'input_tokens': 558, 'output_tokens': 63, 'total_tokens': 621}
+User: Jaké jsou podoby studijních programů na OU?
+Assistant: content="content='Každý studijní program na OU náleží do jedné nebo více oblastí vzdělávání (Příloha č. 3 k zákonu). Vysokoškolské vzdělání se na OU získává studiem v akreditovaných studijních programech podle studijního plánu stanovenými formami studia.' \nresponse_metadata={'token_usage': {'completion_tokens': 63, 'prompt_tokens': 558, 'total_tokens': 621}, 'model_name': 'gpt-3.5-turbo', 'system_fingerprint': None, 'finish_reason': 'stop', 'logprobs': None} \nid='run-43ac281f-5be3-4090-846a-bd8935258f41-0' \nusage_metadata={'input_tokens': 558, 'output_tokens': 63, 'total_tokens': 621}" response_metadata={'token_usage': {'completion_tokens': 222, 'prompt_tokens': 719, 'total_tokens': 941}, 'model_name': 'gpt-3.5-turbo', 'system_fingerprint': None, 'finish_reason': 'stop', 'logprobs': None} id='run-b8f1bfc9-22c7-4554-9d32-27d0560721d2-0' usage_metadata={'input_tokens': 719, 'output_tokens': 222, 'total_tokens': 941}
+
+User: Jaké existují typy studia na Ostravské univerzitě?
+Assistant:
+
+Response: content="content='Na Ostravské univerzitě existují tyto typy studijních programů: bakalářský studijní program, magisterský studijní program (nenavazující na bakalářský studijní program), doplňující pedagogické programy, rozšiřující programy a specializační programy, programy CŽV v rámci akreditovaných studijních programů, programy Univerzity třetího věku, moduly, ostatní programy a kurzy.' \nresponse_metadata={'token_usage': {'completion_tokens': 76, 'prompt_tokens': 0, 'total_tokens': 76}, 'model_name': 'gpt-3.5-turbo', 'system_fingerprint': None, 'finish_reason': 'stop', 'logprobs': None} \nid='run-0f96c18c-1f8a-4e8d-82a2-0c4be746c862-0' \nusage_metadata={'input_tokens': 0, 'output_tokens': 76, 'total_tokens': 76}" response_metadata={'token_usage': {'completion_tokens': 267, 'prompt_tokens': 1140, 'total_tokens': 1407}, 'model_name': 'gpt-3.5-turbo', 'system_fingerprint': None, 'finish_reason': 'stop', 'logprobs': None} id='run-2cfc8325-7a33-49e9-9dc2-5aa3e6bf3d4f-0' usage_metadata={'input_tokens': 1140, 'output_tokens': 267, 'total_tokens': 1407}
+Sources: ['data\\ou-stud_rad.md', 'data\\ou-stud_rad.md', 'data\\ou-stud_rad.md']
+Enter your next question (or 'exit' to quit): exit

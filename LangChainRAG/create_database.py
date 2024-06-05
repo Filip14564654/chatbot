@@ -23,6 +23,7 @@ def generate_data_store():
 def load_documents():
     loader = DirectoryLoader(DATA_PATH, glob="*.md")
     documents = loader.load()
+    print(f"Loaded {len(documents)} documents.")
     return documents
 
 
@@ -36,9 +37,10 @@ def split_text(documents: list[Document]):
     chunks = text_splitter.split_documents(documents)
     print(f"Split {len(documents)} documents into {len(chunks)} chunks.")
 
-    document = chunks[10]
-    print(document.page_content)
-    print(document.metadata)
+    # Debugging: Print content of some chunks
+    for i, chunk in enumerate(chunks[:5]):  # Print first 5 chunks for brevity
+        print(f"Chunk {i} content:\n{chunk.page_content[:300]}...\n")
+        print(f"Metadata: {chunk.metadata}")
 
     return chunks
 
@@ -49,11 +51,32 @@ def save_to_chroma(chunks: list[Document]):
         shutil.rmtree(CHROMA_PATH)
 
     # Create a new DB from the documents.
-    db = Chroma.from_documents(
-        chunks, OpenAIEmbeddings(), persist_directory=CHROMA_PATH
-    )
-    db.persist()
-    print(f"Saved {len(chunks)} chunks to {CHROMA_PATH}.")
+    try:
+        embeddings = OpenAIEmbeddings(api_key="")
+
+        # Generate embeddings for chunks
+        chunk_texts = [chunk.page_content for chunk in chunks]
+        chunk_embeddings = embeddings.embed_documents(chunk_texts)
+
+        db = Chroma(embedding_function=embeddings, persist_directory=CHROMA_PATH)
+        db.add_documents(chunks, embeddings=chunk_embeddings)
+        db.persist()
+        print(f"Saved {len(chunks)} chunks to {CHROMA_PATH}.")
+
+        # Verify documents are indexed correctly by checking the document count
+        verify_indexed_documents(db)
+    except Exception as e:
+        print(f"Error during saving to Chroma: {e}")
+
+
+def verify_indexed_documents(db):
+    print("Verifying indexed documents...")
+    try:
+        results = db.similarity_search("", k=1)  # Performing an empty query to get the count
+        doc_count = len(results)
+        print(f"Number of documents indexed: {doc_count}")
+    except Exception as e:
+        print(f"Error verifying document count in Chroma: {e}")
 
 
 if __name__ == "__main__":

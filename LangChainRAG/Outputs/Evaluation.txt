@@ -1,0 +1,197 @@
+PS C:\Users\Šunka\Documents\GitHub\chatbot\LangChainRAG> & "C:/Program Files/Python311/python.exe" c:/Users/Šunka/Documents/GitHub/chatbot/LangChainRAG/Evaluation.py
+
+Query: Jaké jsou základní způsoby výuky na Ostravské univerzitě?
+Retrieved Doc 1: Článek 4   Způsoby výuky
+
+Základní způsoby výuky na OU jsou přednášky, cvičení, semináře, exkurze, praxe, speciální kurzy, konzultace, tutoriály, off-line a on-line výuka prostřednictvím Learning Mana... with score 0.8696648327838202
+Retrieved Doc 2: Vnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU
+
+V přednáškách se  studující seznamují s poznatky a metodami příslušného vědního nebo uměleckého oboru, uvádějí se do samostatného stud... with score 0.8265804908480742
+Retrieved Doc 3: Těžiště výuky na OU spočívá v samostatném studiu, které má zejména u studujících v magisterských a doktorských studijních programech vyústit v samostatnou tvůrčí práci.... with score 0.8155892671060092  
+Retrieved Docs: ['Článek 4   Způsoby výuky\n\nZákladní způsoby výuky na OU jsou přednášky, cvičení, semináře, exkurze, praxe, speciální kurzy, konzultace, tutoriály, off-line a on-line výuka prostřednictvím Learning Management System.\n\nVnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU', 'Vnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU\n\nV přednáškách se  studující seznamují s poznatky a metodami příslušného vědního nebo uměleckého oboru, uvádějí se do samostatného studia a připravují se k aplikacím přednášené látky.', 'Těžiště výuky na OU spočívá v samostatném studiu, které má zejména u studujících v magisterských a doktorských studijních programech vyústit v samostatnou tvůrčí práci.']
+Precision: 0.33
+Recall: 1.00
+F1-Score: 0.50
+
+Query: Jaký je účel přednášek na Ostravské univerzitě?
+Retrieved Doc 1: Úkolem pedagogického poradce je zejména:
+1) informovat o struktuře příslušného studia a o možnostech volby předmětů,
+
+Vnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU... with score 0.8174919233617607
+Retrieved Doc 2: 27
+
+Vnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU
+
+Práce musí obsahovat resumé v českém a anglickém jazyce, případně v dalších cizích jazycích podle zadání práce.... with score 0.8132508756569277
+Retrieved Doc 3: Vnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU
+
+V přednáškách se  studující seznamují s poznatky a metodami příslušného vědního nebo uměleckého oboru, uvádějí se do samostatného stud... with score 0.8121515594072181
+Retrieved Docs: ['Úkolem pedagogického poradce je zejména:\n1) informovat o struktuře příslušného studia a o možnostech volby předmětů,\n\nVnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU', '27\n\nVnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU\n\nPráce musí obsahovat resumé v českém a anglickém jazyce, případně v dalších cizích jazycích podle zadání práce.', 'Vnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU\n\nV přednáškách se  studující seznamují s poznatky a metodami příslušného vědního nebo uměleckého oboru, uvádějí se do samostatného studia a připravují se k aplikacím přednášené látky.']
+Precision: 0.00
+Recall: 0.00
+F1-Score: 0.00
+
+Query: Jaký je účel cvičení na Ostravské univerzitě?
+Retrieved Doc 1: 53
+
+Vnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU
+
+potřebami byla po stránce formální i obsahové korektním způsobem dána možnost absolvovat  zvolený  studijní  program/studijní  obo... with score 0.8081360243382466
+Retrieved Doc 2: 27
+
+Vnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU
+
+Práce musí obsahovat resumé v českém a anglickém jazyce, případně v dalších cizích jazycích podle zadání práce.... with score 0.8057663329312419
+Retrieved Doc 3: V rámci své vzdělávací činnosti poskytuje OU programy celoživotního vzdělávání (dále jen „CŽV“) orientované na výkon povolání nebo zájmově, nebo orientované na zvýšení odbornosti studentů nebo absolve... with score 0.8046464068726105
+Retrieved Docs: ['53\n\nVnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU\n\npotřebami byla po stránce formální i obsahové korektním způsobem dána možnost absolvovat  zvolený  studijní  program/studijní  obor  a  dosáhnout  tak  potřebného studijního cíle.', '27\n\nVnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU\n\nPráce musí obsahovat resumé v českém a anglickém jazyce, případně v dalších cizích jazycích podle zadání práce.', 'V rámci své vzdělávací činnosti poskytuje OU programy celoživotního vzdělávání (dále jen „CŽV“) orientované na výkon povolání nebo zájmově, nebo orientované na zvýšení odbornosti studentů nebo absolventů zahraniční nebo tuzemské vysoké školy.']
+Precision: 0.00
+Recall: 0.00
+F1-Score: 0.00
+
+Query: Jaký je účel seminářů na Ostravské univerzitě?
+Retrieved Doc 1: 53
+
+Vnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU
+
+potřebami byla po stránce formální i obsahové korektním způsobem dána možnost absolvovat  zvolený  studijní  program/studijní  obo... with score 0.8054233818494679
+Retrieved Doc 2: Úkolem pedagogického poradce je zejména:
+1) informovat o struktuře příslušného studia a o možnostech volby předmětů,
+
+Vnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU... with score 0.8012934986330232
+Retrieved Doc 3: V  seminářích  se  za  aktivní  účasti  studujících  teoreticky  a  metodicky  rozvíjejí  a prohlubují poznatky předmětů.... with score 0.7994464551438818
+Retrieved Docs: ['53\n\nVnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU\n\npotřebami byla po stránce formální i obsahové korektním způsobem dána možnost absolvovat  zvolený  studijní  program/studijní  obor  a  dosáhnout  tak  potřebného studijního cíle.', 'Úkolem pedagogického poradce je zejména:\n1) informovat o struktuře příslušného studia a o možnostech volby předmětů,\n\nVnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU', 'V  seminářích  se  za  aktivní  účasti  studujících  teoreticky  a  metodicky  rozvíjejí  a prohlubují poznatky předmětů.']
+Precision: 0.00
+Recall: 0.00
+F1-Score: 0.00
+
+Query: Jaký je účel praxe na Ostravské univerzitě?
+Retrieved Doc 1: 27
+
+Vnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU
+
+Práce musí obsahovat resumé v českém a anglickém jazyce, případně v dalších cizích jazycích podle zadání práce.... with score 0.8187279639880397
+Retrieved Doc 2: Těžiště výuky na OU spočívá v samostatném studiu, které má zejména u studujících v magisterských a doktorských studijních programech vyústit v samostatnou tvůrčí práci.... with score 0.8154336609413069  
+Retrieved Doc 3: 53
+
+Vnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU
+
+potřebami byla po stránce formální i obsahové korektním způsobem dána možnost absolvovat  zvolený  studijní  program/studijní  obo... with score 0.8123669327750189
+Retrieved Docs: ['27\n\nVnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU\n\nPráce musí obsahovat resumé v českém a anglickém jazyce, případně v dalších cizích jazycích podle zadání práce.', 'Těžiště výuky na OU spočívá v samostatném studiu, které má zejména u studujících v magisterských a doktorských studijních programech vyústit v samostatnou tvůrčí práci.', '53\n\nVnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU\n\npotřebami byla po stránce formální i obsahové korektním způsobem dána možnost absolvovat  zvolený  studijní  program/studijní  obor  a  dosáhnout  tak  potřebného studijního cíle.']
+Precision: 0.00
+Recall: 0.00
+F1-Score: 0.00
+
+Query: Jaký je účel exkurzí na Ostravské univerzitě?
+Retrieved Doc 1: Exkurze slouží zejména k tomu, aby si  studující  v reálných  podmínkách  ověřovali teoretické  vědomosti  získané  výukou  některých  předmětů  a  seznamovali  se  s metodami práce v praxi.... with score 0.8138055492567553
+Retrieved Doc 2: Úkolem pedagogického poradce je zejména:
+1) informovat o struktuře příslušného studia a o možnostech volby předmětů,
+
+Vnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU... with score 0.7971788282534502
+Retrieved Doc 3: 53
+
+Vnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU
+
+potřebami byla po stránce formální i obsahové korektním způsobem dána možnost absolvovat  zvolený  studijní  program/studijní  obo... with score 0.7960430601911521
+Retrieved Docs: ['Exkurze slouží zejména k tomu, aby si  studující  v reálných  podmínkách  ověřovali teoretické  vědomosti  získané  výukou  některých  předmětů  a  seznamovali  se  s metodami práce v praxi.', 'Úkolem pedagogického poradce je zejména:\n1) informovat o struktuře příslušného studia a o možnostech volby předmětů,\n\nVnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU', '53\n\nVnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU\n\npotřebami byla po stránce formální i obsahové korektním způsobem dána možnost absolvovat  zvolený  studijní  program/studijní  obor  a  dosáhnout  tak  potřebného studijního cíle.']    
+Precision: 0.00
+Recall: 0.00
+F1-Score: 0.00
+
+Query: Jaký je účel speciálních kurzů na Ostravské univerzitě?
+Retrieved Doc 1: 53
+
+Vnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU
+
+potřebami byla po stránce formální i obsahové korektním způsobem dána možnost absolvovat  zvolený  studijní  program/studijní  obo... with score 0.8031235944910305
+Retrieved Doc 2: V rámci své vzdělávací činnosti poskytuje OU programy celoživotního vzdělávání (dále jen „CŽV“) orientované na výkon povolání nebo zájmově, nebo orientované na zvýšení odbornosti studentů nebo absolve... with score 0.8011637284864582
+Retrieved Doc 3: Úkolem pedagogického poradce je zejména:
+1) informovat o struktuře příslušného studia a o možnostech volby předmětů,
+
+Vnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU... with score 0.7977631100143567
+Retrieved Docs: ['53\n\nVnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU\n\npotřebami byla po stránce formální i obsahové korektním způsobem dána možnost absolvovat  zvolený  studijní  program/studijní  obor  a  dosáhnout  tak  potřebného studijního cíle.', 'V rámci své vzdělávací činnosti poskytuje OU programy celoživotního vzdělávání (dále jen „CŽV“) orientované na výkon povolání nebo zájmově, nebo orientované na zvýšení odbornosti studentů nebo absolventů zahraniční nebo tuzemské vysoké školy.', 'Úkolem pedagogického poradce je zejména:\n1) informovat o struktuře příslušného studia a o možnostech volby předmětů,\n\nVnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU']
+Precision: 0.00
+Recall: 0.00
+F1-Score: 0.00
+
+Query: Jaký je účel konzultací na Ostravské univerzitě?
+Retrieved Doc 1: Úkolem pedagogického poradce je zejména:
+1) informovat o struktuře příslušného studia a o možnostech volby předmětů,
+
+Vnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU... with score 0.8148986699197339
+Retrieved Doc 2: 53
+
+Vnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU
+
+potřebami byla po stránce formální i obsahové korektním způsobem dána možnost absolvovat  zvolený  studijní  program/studijní  obo... with score 0.7999037139999031
+Retrieved Doc 3: 27
+
+Vnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU
+
+Práce musí obsahovat resumé v českém a anglickém jazyce, případně v dalších cizích jazycích podle zadání práce.... with score 0.7985988820203278
+Retrieved Docs: ['Úkolem pedagogického poradce je zejména:\n1) informovat o struktuře příslušného studia a o možnostech volby předmětů,\n\nVnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU', '53\n\nVnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU\n\npotřebami byla po stránce formální i obsahové korektním způsobem dána možnost absolvovat  zvolený  studijní  program/studijní  obor  a  dosáhnout  tak  potřebného studijního cíle.', '27\n\nVnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU\n\nPráce musí obsahovat resumé v českém a anglickém jazyce, případně v dalších cizích jazycích podle zadání práce.']
+Precision: 0.00
+Recall: 0.00
+F1-Score: 0.00
+
+Query: Jaký je účel tutoriálů, off-line a on-line výuky prostřednictvím LMS na Ostravské univerzitě?
+Retrieved Doc 1: Tutoriály, off-line a on-line výuka prostřednictvím Learning Management System jsou primárními způsoby výuky u distanční, nebo kombinované formy studia.
+
+Výuka a kontroly studia probíhají v českém jaz... with score 0.861155489436592
+Retrieved Doc 2: Článek 4   Způsoby výuky
+
+Základní způsoby výuky na OU jsou přednášky, cvičení, semináře, exkurze, praxe, speciální kurzy, konzultace, tutoriály, off-line a on-line výuka prostřednictvím Learning Mana... with score 0.8278952301772351
+Retrieved Doc 3: Úkolem pedagogického poradce je zejména:
+1) informovat o struktuře příslušného studia a o možnostech volby předmětů,
+
+Vnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU... with score 0.8156306553112469
+Retrieved Docs: ['Tutoriály, off-line a on-line výuka prostřednictvím Learning Management System jsou primárními způsoby výuky u distanční, nebo kombinované formy studia.\n\nVýuka a kontroly studia probíhají v českém jazyce, to neplatí u studia z oblasti cizích jazyků.', 'Článek 4   Způsoby výuky\n\nZákladní způsoby výuky na OU jsou přednášky, cvičení, semináře, exkurze, praxe, speciální kurzy, konzultace, tutoriály, off-line a on-line výuka prostřednictvím Learning Management System.\n\nVnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU', 'Úkolem pedagogického poradce je zejména:\n1) informovat o struktuře příslušného studia a o možnostech volby předmětů,\n\nVnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU']
+Precision: 0.33
+Recall: 1.00
+F1-Score: 0.50
+
+Query: V jakém jazyce probíhá výuka a kontroly studia na Ostravské univerzitě?
+Retrieved Doc 1: Jazyk výuky a kontrola studia u studijního programu akreditovaného v cizím jazyce je ten cizí jazyk, v kterém je studijní program akreditován.
+
+Článek 5   Organizace výuky... with score 0.8347767147210028
+Retrieved Doc 2: V českém  jazyce  je  realizována  i  administrativní  činnost  týkající  se  konání  státní rigorózní  zkoušky  pro  absolventy  magisterských  studijních  programů  a  závěrečné zkoušky v programu c... with score 0.8164686400267647
+Retrieved Doc 3: Vnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU
+
+Standardní studijní plán určuje časovou a obsahovou posloupnost předmětů studijního programu, způsob a rozsah výuky předmětů a formu k... with score 0.8146999896758536
+Retrieved Docs: ['Jazyk výuky a kontrola studia u studijního programu akreditovaného v cizím jazyce je ten cizí jazyk, v kterém je studijní program akreditován.\n\nČlánek 5   Organizace výuky', 'V českém  jazyce  je  realizována  i  administrativní  činnost  týkající  se  konání  státní rigorózní  zkoušky  pro  absolventy  magisterských  studijních  programů  a  závěrečné zkoušky v programu celoživotního vzdělávání.', 'Vnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU\n\nStandardní studijní plán určuje časovou a obsahovou posloupnost předmětů studijního programu, způsob a rozsah výuky předmětů a formu kontroly studijních výsledků.']     
+Precision: 0.00
+Recall: 0.00
+F1-Score: 0.00
+
+Query: V jakém jazyce mohou být vybrané předměty nebo jejich části vyučovány na Ostravské univerzitě?
+Retrieved Doc 1: Studující  mohou  jednat  a  písemnosti  předkládat  podle  odstavců  7  a  8  i  v  jazyce slovenském.
+
+Pokud je studijní program akreditován v cizím jazyce, je administrativní činnost spojená s tímt... with score 0.8232810774959595
+Retrieved Doc 2: 27
+
+Vnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU
+
+Práce musí obsahovat resumé v českém a anglickém jazyce, případně v dalších cizích jazycích podle zadání práce.... with score 0.8178464626514343
+Retrieved Doc 3: 53
+
+Vnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU
+
+potřebami byla po stránce formální i obsahové korektním způsobem dána možnost absolvovat  zvolený  studijní  program/studijní  obo... with score 0.817340881379582
+Retrieved Docs: ['Studující  mohou  jednat  a  písemnosti  předkládat  podle  odstavců  7  a  8  i  v  jazyce slovenském.\n\nPokud je studijní program akreditován v cizím jazyce, je administrativní činnost spojená s tímto programem realizována také v tomto cizím jazyce.', '27\n\nVnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU\n\nPráce musí obsahovat resumé v českém a anglickém jazyce, případně v dalších cizích jazycích podle zadání práce.', '53\n\nVnitřní předpisy Ostravské univerzity Studijní a zkušební řád OU\n\npotřebami byla po stránce formální i obsahové korektním způsobem dána možnost absolvovat  zvolený  studijní  program/studijní  obor  a  dosáhnout  tak  potřebného studijního cíle.']
+Precision: 0.00
+Recall: 0.00
+F1-Score: 0.00
+
+Query: Jaký je jazyk výuky a kontroly studia u programů akreditovaných v cizím jazyce na Ostravské univerzitě?
+Retrieved Doc 1: Jazyk výuky a kontrola studia u studijního programu akreditovaného v cizím jazyce je ten cizí jazyk, v kterém je studijní program akreditován.
+
+Článek 5   Organizace výuky... with score 0.8935549625353867
+Retrieved Doc 2: Studující  mohou  jednat  a  písemnosti  předkládat  podle  odstavců  7  a  8  i  v  jazyce slovenském.
+
+Pokud je studijní program akreditován v cizím jazyce, je administrativní činnost spojená s tímt... with score 0.8396657280748423
+Retrieved Doc 3: Jazyk,  v  němž  bude  práce  vypracována,  obhajována  a  hodnocena,  je  v případě akreditace  studijního  programu  v cizím jazyce, ten cizí jazyk, v kterém byl studijní program akreditován.
+
+Článe... with score 0.8359727263779085
+Retrieved Docs: ['Jazyk výuky a kontrola studia u studijního programu akreditovaného v cizím jazyce je ten cizí jazyk, v kterém je studijní program akreditován.\n\nČlánek 5   Organizace výuky', 'Studující  mohou  jednat  a  písemnosti  předkládat  podle  odstavců  7  a  8  i  v  jazyce slovenském.\n\nPokud je studijní program akreditován v cizím jazyce, je administrativní činnost spojená s tímto programem realizována také v tomto cizím jazyce.', 'Jazyk,  v  němž  bude  práce  vypracována,  obhajována  a  hodnocena,  je  v případě akreditace  studijního  programu  v cizím jazyce, ten cizí jazyk, v kterém byl studijní program akreditován.\n\nČlánek 42\n\nObecný rámec pravidel pro vypracování bakalářské a diplomové práce']
+Precision: 0.33
+Recall: 1.00
+F1-Score: 0.50
